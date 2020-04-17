@@ -4,18 +4,18 @@
 
 
 <div class="container-fluid" > 
-  <div class="row justify-content-center" *ngFor="let p of cartData;" style="border:2px solid #cecece;margin-bottom: 0.25em;"> 
+  <div class="row justify-content-center" *ngFor="let p of cartData;" style="border:2px solid #cecece;margin-bottom: 0.25em;margin-right: 1em;"> 
     
-     <div class="col"><img src="{{p.productImageUrl}}" width="200" height="200"></div>
+     <div class="col pl-3 ml-2" >
+       <img src="{{p.productImageUrl}}" width="200" height="200" >
+      </div>
      <div class="col">
-       <div class="card border-0 text-center">
-      <p>{{p.productName}}</p>
-      <p>{{p.productDiscountPrice}}</p>
+       <div class="card border-0 text-center pt-3">
+      <span>{{p.productName}}</span>
       <del>{{p.productOriginalPrice}}</del>
+      <span>{{p.productDiscountPrice}}</span>
       <div class="btn" (click)="removeValues(p)" style="background-color: cornflowerblue;width: 8rem;margin-bottom: 0.25em;float: none;">Remove</div>
-    </div> 
-
-
+      </div> 
 
     <!--Quantity Button start-->
      <div class="card" style="width: 8rem;align-items: center;background-color: lime;">
