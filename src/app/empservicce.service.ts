@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class EmpservicceService {
 
   
-  private sourceUrl: string;
+ /* private sourceUrl: string;
   
 
  
@@ -43,5 +43,5 @@ export class EmpservicceService {
     const url=`${this.sourceUrl}/${id}`;
     return this.http.put<Employee>(url,empl);
 
-  }
+  }*/
 }
