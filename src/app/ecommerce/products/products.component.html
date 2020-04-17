@@ -1,0 +1,61 @@
+
+
+
+<div class="container-fluid" style="background-color: lightcyan" >
+  <div class="row"  >
+    
+    
+    <div class="col ml-1 pt-3"  *ngFor="let p of products.products;" style="text-align: center;">
+
+
+      <div class="card"  >
+        <a href="#">    
+           <!-- <img src={{p.productImageUrl}} class="img-fluid" >-->
+              <img src={{p.productImageUrl}} width="250" height="220" >
+            </a>
+          
+        <p></p>
+            <a href="#" style="text-decoration: none;">
+                <p>{{p.productName}}</p>
+                <p>{{p.productName}}</p>
+            </a>
+           <!-- <p>{{p.productDescription}}</p>  *ngFor="let q of cartData;"*ngIf="p.productId == q.productId "-->
+            <del><small>Rs.20/kg</small></del>
+            <p>Rs.15/kg</p>
+
+            <div class="card " style="width: 10em;align-items: center;background-color: lime;float: none; margin: 0 auto;" >
+              <div class="row">
+                <div class="btn" (click)="incrementValue(p)" style="padding-right: 0.1em;"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></div>
+                 <div class="btn" ><input type="text" name="quantity"  value="1" [(ngModel)]="p.quantity"
+                   maxlength="2" max="10" size="1" id="number" style="border-style:none;text-align: center;font-weight: bolder;" /></div>
+                 <div class="btn" (click)="decrementValue(p)" style="padding-left: 0.1em;"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></div>
+              
+              </div>
+            </div>
+            
+            
+           
+              
+              
+               <div class="btn mb-1 badge-danger ml-4 mr-4 mt-1" (click)="onButtonClickData(p)">
+               Add To Cart <img src="https://image.flaticon.com/icons/png/512/126/126083.png" height="20" width="20"/>
+              </div>
+            </div>
+              </div>
+            </div>
+          
+</div>
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+

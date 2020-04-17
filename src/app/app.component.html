@@ -1,0 +1,179 @@
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+
+ <nav class="nav" style="margin: 1em;">
+
+  <div class="container-fluid">
+    <div class="row">
+      <button><img src="./assets/logodesign.png" style="width: 100px; height: 30px;"></button>
+
+      <input type="text" placeholder="Search..." style="width: 60%;margin-left: 1em;" >
+      <button type="submit"><i class="fa fa-search" ></i></button>
+
+     
+      <a routerLinkActive="active" routerLink="/app-cart-component" style="margin-right: 5em;">Cart
+    
+        <span class="fa-layers fa-fw" >
+   
+           <i class="fa fa-shopping-cart fa-2x" style="color: black; "></i>
+           <span class="fa-layers-counter" style="background:blue;font-size: 50px;">{{numberOfProducts}}</span>
+ 
+         </span>
+  
+      </a>
+    </div>
+
+  </div>
+
+ </nav>
+
+
+    
+    
+      
+    
+     
+
+      <nav class="navbar navbar-expand-sm bg-dark">
+     
+    
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-add-employee-data">Add Employee</a> ||
+      </li>
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-delete-employee-data">Delete Employee</a> ||
+      </li>
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-update-employee-data">Update Employee</a>||
+
+      </li>
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-get-employee-data">Employee Data by Id</a>||
+      </li>
+
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-display-employeelist">Data List</a> ||
+      </li>
+
+      <li class="nav-item">
+        <a routerLinkActive="active"  routerLink="/app-products">Product Data List</a> ||
+      </li>
+
+      <li class="nav-item">
+        <a routerLinkActive="active"  routerLink="/app-products">Login</a> ||
+      </li>
+
+      <li class="nav-item">
+        <a routerLinkActive="active"  routerLink="/app-adminview">Admin</a> ||
+      </li>
+
+
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-product-category">ProductCategory</a>||
+
+      </li>
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-login">Login</a>||
+
+      </li>
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-signup">Signup</a>||
+
+      </li>
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-useraddress">Address</a>||
+
+      </li>
+
+
+      <li class="nav-item">
+        <a routerLinkActive="active" routerLink="/app-cart-component">Cart
+    
+          <span class="fa-layers fa-fw" >
+     
+             <i class="fa fa-shopping-cart fa-2x" style="color: black; "></i>
+             <span class="fa-layers-counter" style="background:blue;font-size: 50px;">{{numberOfProducts}}</span>
+   
+           </span>
+    
+        </a>
+      </li>
+     
+      
+    </ul>
+
+  
+    
+  </nav>
+ <div class="container-fluid" >
+        <router-outlet></router-outlet>
+      </div>
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/logodesign.png" alt="Los Angeles" width="100%" height="300">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/logodesign.png" alt="Chicago" width="100%" height="300">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/logodesign.png" alt="New York" width="100%" height="300">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <!--<div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>Column 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            
+              <div class="col-sm-4">
+              <h3>Column 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            
+            </div>
+            
+              <div class="col-sm-4">
+              <h3>Column 3</h3>        
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+          </div>
+        </div>-->  
+        
+
+
+
+  
+  
+  
+
+
+
+
+
+

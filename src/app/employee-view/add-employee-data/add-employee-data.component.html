@@ -1,0 +1,16 @@
+<p>add-employee-data works!</p>
+
+
+<form (submit)=onSubmit()>
+
+    <label>EmpId </label>
+    <input type="number" name='employeeId' [(ngModel)]="emp.id"><br>
+    <label>Name </label>
+    <input type="text" name='employeeName' [(ngModel)]="emp.employeeName"><br>
+    <label>Department</label>
+    <input type="text" name='department' [(ngModel)]="emp.department"><br>
+    <label>Date Of Joining</label>
+    <input type="date" name='employeeId' [(ngModel)]="emp.date"><br>
+  
+    <input type="submit">
+  </form>

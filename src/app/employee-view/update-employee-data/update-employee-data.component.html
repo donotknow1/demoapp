@@ -1,0 +1,29 @@
+<p>update-employee-data works!</p>
+<form (submit)=onGetById(id)>
+    <label>EmpId </label>
+    <input type="text" name='id' [(ngModel)]="id"><br>
+    <input type="submit">
+  </form>
+
+
+  <form (submit)=onUpdate(empData)>
+  <table border="1">
+    <thead >
+        <th>Id</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Date</th>
+    </thead>
+    <tbody>
+  <tr>
+    <td><input type="number" name="id" value={{empData.id}} [(ngModel)]="empData.id" ></td>
+    <td><input type="text" name="employeeName" [(ngModel)]="empData.employeeName"></td>
+    <td><input type="text" name="department" [(ngModel)]="empData.department"></td>
+    <td><input type="date" name="date" [(ngModel)]="empData.date"></td>
+
+    <td><input type="submit" value="Update"></td>
+  </tr>
+    </tbody>
+    </table>
+    
+</form>
