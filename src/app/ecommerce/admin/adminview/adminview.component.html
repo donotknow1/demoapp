@@ -87,20 +87,7 @@
         </div>
       </div>
       
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-       
-      </div>
+    
   </div>
 </nav>
 
@@ -137,7 +124,7 @@
   </div>
 </nav>
 
-
+<div class="d-none d-lg-block">
 
 //Just To Show Data
 <div class="container-fluid"  >
@@ -176,6 +163,54 @@
   </div>
 </div>
 
+
+</div>
+<!---->
+
+
+
+
+
+
+
+
+
+
+<!--For small screens  -->
+<div class="container-fluid">
+  <div class="d-xs-block d-md-none">
+     <div class="row" *ngFor="let p of productCategory.productCategory">
+       <div class="col-xs-6">
+        <img src={{p.productCategoryImageUrl}}   width="120" height="120">
+       </div>
+       <div class="col-xs-6">
+         <div class="d-inline-flex ">
+            <p class="productName p-2">{{p.productCategoryTeluguName}}</p>
+            <p class="productName p-2">{{p.productCategoryName}}</p>
+          </div><br>
+          <div class="d-inline-flex"><span class="pl-2">250g</span>
+            <span class="pl-2">500g</span>
+            <span class="pl-2">1kg</span></div><br>
+          <div class="d-inline-flex">
+            <del class="productName pl-2">Rs.25</del>
+            <p class="productName pl-2">Rs.20</p>
+          </div><br>
+      <div class="btn">
+        <a class="dec" id="dec" hidden><i class="fa fa-minus-circle"></i></a>
+        <span class="hide" id="val">1</span>
+        <a (click)="incButton(p)" id="inc"><i class="fa fa-plus-circle"></i></a></div>
+       </div>
+
+     </div>
+  </div>
+
+
+
+
+
+
+</div>
+<!--End -->
 
 
 

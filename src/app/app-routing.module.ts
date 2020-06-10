@@ -7,6 +7,7 @@ import { ProductCategoryComponent } from './ecommerce/productCategory/product-ca
 import { UseraddressComponent } from './ecommerce/address/useraddress/useraddress.component';
 import { SignupComponent } from './ecommerce/SignUp/signup/signup.component';
 import { LoginComponent } from './ecommerce/Login/login/login.component';
+import { SearchComponent } from './ecommerce/productsSearch/search/search.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'app-login', component:LoginComponent},
   {path:'app-signup',component:SignupComponent},
   {path: 'app-useraddress', component:UseraddressComponent},
+  {path:'app-search', component :SearchComponent}
   
 ];
 

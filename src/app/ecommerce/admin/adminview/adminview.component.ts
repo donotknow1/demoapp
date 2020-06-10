@@ -15,7 +15,7 @@ export class AdminviewComponent implements OnInit {
 
     var items = localStorage.getItem("123454");
 
-    var res = items.concat("Hello Added");
+    //var res = items.concat("Hello Added");
 
     //console.log(items);
     //console.log("Cart Items",localStorage.getItem("123454"));
@@ -45,5 +45,15 @@ export class AdminviewComponent implements OnInit {
       }
     );
   }
+
+
+
+
+  incButton(p:any){
+    console.log("this clicked",p.productCategoryId);
+   p=document.getElementById('inc').classList.add('hide'); 
+   //document.getElementById('dec').classList.remove('hide');
+  }
+
 
 }

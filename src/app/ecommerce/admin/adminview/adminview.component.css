@@ -14,3 +14,14 @@
     color: red;
     width: 40%; /* Set the width of the positioned div */
 }
+
+
+
+
+.hide{
+    display: none;
+}
+
+.productName{
+    font-weight: 500;
+}
